@@ -1,0 +1,33 @@
+{% extends "layout.html" %} {% block title %} Login {% endblock %} {% block content %}
+
+<html data-bs-theme="dark">
+
+  <div id="form-ui">
+    <form action="/users/login" method="post" id="form">
+      <div id="form-body">
+        <div id="welcome-lines">
+          <div id="welcome-line-1" style="font-style: oblique;">Supreme</div>
+          <div id="welcome-line-2">Welcome Back ;)</div>
+        </div>
+        <div id="input-area">
+          <div class="form-inp">
+            <input placeholder="Username" type="text" name="username" required>
+          </div>
+          <div class="form-inp">
+            <input placeholder="Password" type="password" name="password" required>
+          </div>
+        </div>
+        <div id="submit-button-cvr">
+          <button id="submit-button" type="submit">Login</button>
+        </div>
+        {% if error_message %}
+        <p class="text-danger mt-3 text-center">{{ error_message }}</p>
+        {% endif %}
+        <div id="bar"></div>
+      </div>
+    </form>
+    </div>
+
+</html>
+
+{% endblock %}

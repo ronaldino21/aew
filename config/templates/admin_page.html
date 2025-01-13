@@ -1,0 +1,53 @@
+{% extends "layout.html" %} {% block title %} Supreme {% endblock %} {% block content %}
+<html data-bs-theme="dark">
+ <body>
+    <aside class="sidebar">
+        <div class="three-body mt-5 mb-5">
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+        </div>
+        <div class="sections align-items-center">
+            <div class="item mb-5 mt-5" id="home-button">
+                <a href="" class="text-decoration-none"><i class='bx bx-home-alt logos'></i></a>
+            </div>
+            <div class="item mb-5" id="wait-button">
+                <a href="" class="text-decoration-none"><i class='bx bxs-watch logos'></i></a>
+            </div>
+            <div class="item mb-5" id="injected-button">
+                <a href="" class="text-decoration-none"><i class='bx bx-injection logos' ></i></a>
+            </div>
+            <div class="item mb-5" id="dead-button">
+                <a href="" class="text-decoration-none"><i class='bx bxs-skull logos' ></i></a>
+            </div>
+            <div class="item mb-5">
+                <a href="/users/logout" class="text-danger text-decoration-none"><i class='bx bx-log-out logos' ></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="container d-flex justify-content-center align-items-center mt-3">
+        <h3 id="title-content" class="text-success"></h3>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center mt-3">
+        <div class="" id="on-dataTables"></div>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center mt-3" id="container-logos">
+        <div class="" id="div-dataTables">
+            
+        </div>
+    </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+ <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/ondatatable.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/putstatus.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/load-data.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/home-button.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/waiting-button.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/injected-button.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/dead-button.js') }}"></script>
+ </body>
+</html>
+{% endblock %}
