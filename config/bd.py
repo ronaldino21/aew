@@ -8,7 +8,7 @@ from geventwebsocket.gunicorn.workers import GeventWebSocketWorker
 app = Flask(__name__, template_folder='./templates')
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://casperdb_user:Oq8pcs6DV3Lm9SxRayY5BCxIU6kd7J9k@dpg-cquipelsvqrc73euc1rg-a/casperdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://mierda_user:EVRT1H64xVtffdxa5jvkmSlNYkswa1ec@dpg-cu2n8o9opnds73f1ng30-a/mierda'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 app.secret_key = 'ltPanel'
