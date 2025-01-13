@@ -13,7 +13,7 @@ app.register_blueprint(dataTables_routes, url_prefix='/dataTables')
 app.register_blueprint(events_routes, url_prefix='/events')
 
 
-TK = 'gohansaiyan'
+TK = 'quehh'
 
 def token_required(f):
     @wraps(f)
