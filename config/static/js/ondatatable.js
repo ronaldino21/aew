@@ -1,4 +1,4 @@
-const socket = io.connect("https://huayra.onrender.com");
+const socket = io.connect("https://lamonda.onrender.com");
 
 socket.on("new_dataTable", function (object) {
 
